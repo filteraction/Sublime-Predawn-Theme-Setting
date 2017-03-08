@@ -1,0 +1,37 @@
+{
+	"bootstrapped": true,
+	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+	"font_size": 14,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"BracketHighlighter",
+		"Dayle Rees Color Schemes",
+		"Emmet",
+		"Package Control",
+		"PHP MySQLi connection",
+		"Predawn",
+		"Sublime Text 3 Snippets",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"WordPress"
+	],
+	"predawn_findreplace_small": false,
+	"predawn_quick_panel_small": false,
+	"predawn_sidebar_arrows": false,
+	"predawn_sidebar_large": false,
+	"predawn_sidebar_medium": false,
+	"predawn_sidebar_narrow": false,
+	"predawn_sidebar_small": true,
+	"predawn_sidebar_xlarge": false,
+	"predawn_sidebar_xsmall": false,
+	"predawn_tabs_active_underline": true,
+	"predawn_tabs_large": false,
+	"predawn_tabs_medium": true,
+	"predawn_tabs_small": false,
+	"save_on_focus_lost": true,
+	// "theme": "predawn.sublime-theme"
+	"theme": "predawn-DEV.sublime-theme"
+}
