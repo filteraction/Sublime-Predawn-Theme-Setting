@@ -1,0 +1,37 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * Register Post Type ${1:cpt}
+ */
+add_action( 'init', 'codex_${1:cpt}_init' );
+function codex_${1:cpt}_init() {
+    \$labels = array(
+        'name'               => _x( '${1:cpt}s', 'post type general name', 'your-plugin-textdomain' ),
+        'singular_name'      => _x( '${1:cpt}', 'post type singular name', 'your-plugin-textdomain' ),
+        'add_new'            => 'Add ${1:cpt}',
+        'all_items'          => 'All ${1:cpt}',
+        'edit_item'          =>'Edit ${1:cpt}',
+    );
+    \$args = array(
+        'labels'             => \$labels,
+        'description'        => __( 'Description.', 'your-plugin-textdomain' ),
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => array( 'slug' => '${1:cpt}' ),
+        'capability_type'    => 'post',
+        'has_archive'        => true,
+        'menu_position'      => 5,
+        'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'comments' )
+    );
+    register_post_type( '${1:cpt}', \$args );
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cpt</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+	<description>(Create Standered cpt)</description>
+</snippet>

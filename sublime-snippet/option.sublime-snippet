@@ -1,0 +1,43 @@
+<snippet>
+	<content><![CDATA[
+		if( function_exists('acf_add_options_page') ) {
+    
+    acf_add_options_page(array(
+        'page_title'    => 'Theme General Settings',
+        'menu_title'    => 'Theme Settings',
+        'menu_slug'     => 'theme-general-settings',
+        'capability'    => 'edit_posts',
+        'redirect'      => false
+    ));
+    
+    acf_add_options_sub_page(array(
+        'page_title'    => 'Theme Header Settings',
+        'menu_title'    => 'Header',
+        'parent_slug'   => 'theme-general-settings',
+    ));
+    
+    acf_add_options_sub_page(array(
+        'page_title'    => 'Theme Footer Settings',
+        'menu_title'    => 'Footer',
+        'parent_slug'   => 'theme-general-settings',
+    ));    
+    acf_add_options_sub_page(array(
+        'page_title'    => 'Theme Contact Settings',
+        'menu_title'    => 'Contact',
+        'parent_slug'   => 'theme-general-settings',
+    ));   
+     acf_add_options_sub_page(array(
+        'page_title'    => 'Theme Contact Settings',
+        'menu_title'    => 'Home',
+        'parent_slug'   => 'theme-general-settings',
+    ));
+    
+}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	 <tabTrigger>option</tabTrigger> 
+	 <desription>  (Function to reate the option page via acf.)</desription>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

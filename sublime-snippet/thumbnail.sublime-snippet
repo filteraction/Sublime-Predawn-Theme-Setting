@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+
+add_theme_support( 'post-thumbnails' );
+set_post_thumbnail_size( 1200, 9999 );
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>thumbnail</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+	<description>(create function for thumbnail)</description>
+</snippet>

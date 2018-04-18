@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * Widget Name ${1:cpt}
+ */
+function demolition_widgets_${1:widget}_init() {
+    register_sidebar( array(
+        'name' => __( '${1:widget}', 'demolition' ),
+        'id' => '${1:widget}',
+        'description' => __( 'Add widgets here to appear in your sidebar.', 'demolition' ),
+        'before_widget' => ' ',
+        'after_widget' => '',
+        'before_title' =>'',
+        'after_title' =>'',
+    ) );
+}
+add_action( 'widgets_init', 'demolition_widgets_${1:widget}_init' );
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>widget</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+	<description>(Create standard widget)</description>
+</snippet>

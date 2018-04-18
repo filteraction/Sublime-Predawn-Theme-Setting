@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+if ( have_posts() ) : 
+while ( have_posts() ) : the_post(); 
+\$url = wp_get_attachment_url( get_post_thumbnail_id(\$post->ID) );?>
+<?php endwhile;endif; ?>]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>loop</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+	<description>(wp default loop)</description>
+</snippet>

@@ -1,0 +1,27 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * Custom Slug Name ${1:cpt}
+ */
+        global \$post;
+            \$args = array( 
+                'posts_per_page'  =>   -1 ,
+                'orderby'         => 'date',
+                'order'           => 'DESC',
+                'post_type'       => '${1:cpt}',
+                'post_status'     => 'publish'
+            );
+            \$the_query = new WP_Query( \$args );
+            while ( \$the_query->have_posts() ) :
+                \$the_query->the_post();
+                    \$url = wp_get_attachment_url( get_post_thumbnail_id(\$post->ID) );
+                ?>
+
+                <?php endwhile; ?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fetch</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+	<description>(custom fetch loop)</description>
+</snippet>

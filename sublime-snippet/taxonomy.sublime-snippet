@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * Register taxonomy Type ${1:taxonomy}
+ */
+add_action( 'init', 'create_${1:taxonomy}_taxonomy' );
+function create_${1:taxonomy}_taxonomy() {
+    register_taxonomy(
+        '${1:taxonomy}',
+        '${2:cpt name here}',
+        array(
+            'label' => '${1:taxonomy}',
+            'hierarchical' => true,
+        )
+    );
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>taxonomy</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+	<description>(Create standered taxonomy)</description>
+</snippet>

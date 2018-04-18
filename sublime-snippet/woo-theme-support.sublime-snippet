@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+
+add_action( 'after_setup_theme', 'woocommerce_support' );
+
+function woocommerce_support() {
+
+add_theme_support( 'woocommerce' );
+
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>woo_theme_support</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+	<description>(Function to woocommerce theme support)</description>
+</snippet>

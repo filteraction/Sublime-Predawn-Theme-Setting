@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+ 			global \$post;
+            \$i=1;
+            if( have_rows('${1:slider}') ): 
+              while( have_rows('${1:slider}') ): the_row(); 
+              \$image = get_sub_field('slider_image');
+              \$title = get_sub_field('slider_title');
+              \$subtitle = get_sub_field('subtitle');
+              \$content1 = get_sub_field('slider_contetn1');
+              \$content2 = get_sub_field('slider_content2');
+              \$link = get_sub_field('link_button');?>
+              \$link1 = get_sub_field('link_button1');?>
+              //html code hare
+
+
+
+             <?php \$i++ ;endwhile; endif;?> 
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	 <tabTrigger>repeater</tabTrigger> 
+	 <description>   (Acf repeater loop.)</description>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
