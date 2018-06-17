@@ -35,3 +35,33 @@
 	// "theme": "predawn.sublime-theme"
 	"theme": "predawn-DEV.sublime-theme"
 }
+
+
+
+or try this
+-------------------------------------------------------
+{
+	"bootstrapped": true,
+	"color_scheme": "Packages/Colorcoder/3024 Night (Colorcoded).tmTheme",
+	"font_size": 13,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"original_color_scheme": "Packages/3024 Color Scheme/3024 Night.tmTheme",
+	"predawn_findreplace_small": false,
+	"predawn_quick_panel_small": false,
+	"predawn_sidebar_arrows": false,
+	"predawn_sidebar_large": false,
+	"predawn_sidebar_medium": false,
+	"predawn_sidebar_narrow": false,
+	"predawn_sidebar_small": true,
+	"predawn_sidebar_xlarge": false,
+	"predawn_sidebar_xsmall": false,
+	"predawn_tabs_active_underline": true,
+	"predawn_tabs_large": false,
+	"predawn_tabs_medium": true,
+	"predawn_tabs_small": false,
+	"save_on_focus_lost": true,
+	"theme": "predawn-DEV.sublime-theme"
+}
